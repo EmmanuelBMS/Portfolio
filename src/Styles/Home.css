@@ -1,0 +1,43 @@
+.main-content-div {
+  background-color: #1A1A2E;
+  height: 100vh;
+  color: #f0f0f0;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: .9;
+  display: flex;
+}
+
+.main-content-div h3{
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.main-content-div h1{
+  font-size: 52px;
+  font-weight: 900;
+}
+
+.span-h3-text-color-highlight {
+  color: #E94560;
+  font-size: 52px;
+}
+
+.main-content-div-tittles {
+  padding-top: 10%;
+  margin-left: 5%;
+}
+
+.main-content-div-tittles p {
+  text-align: center;
+  margin-top: 6%;
+  line-height: 1.2;
+  word-wrap: break-word;
+  width: 400px;
+}
+
+.imagem-minha {
+  border-radius: 50%;
+  width: 300px;
+  float: right;
+}
