@@ -4,7 +4,7 @@ import '../Styles/Intro.css';
 
 function Intro() {
   return (
-    <section>
+    <section className="home-section">
       <div className="main-content-div">
         <img
           className="main-content-background"

@@ -8,8 +8,8 @@
   position: relative;
   top: 0;
   left: 0;
-  padding-top: 13%;
-  z-index: 98;
+  z-index: 97;
+  max-height: 100vh;
 }
 
 .main-content-background {
@@ -25,6 +25,7 @@
 .main-content-div-tittles {
   position: relative;
   z-index: 98;
+  padding-top: 25vh;
 }
 
 .main-content-div-tittles h1 {

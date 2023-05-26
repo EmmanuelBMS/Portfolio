@@ -10,7 +10,7 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
-  box-shadow: -1px 3px 5px #141420;
+  box-shadow: 0px 15px 30px #141420;
   position: fixed;
   z-index: 99;
 }
