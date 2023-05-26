@@ -4,14 +4,15 @@
   background-color: #1f1f36; /* #1A1A2E bg-color */
   align-items: center;
   justify-content: space-between;
-  color: #f0f0f0;
+  color: #eaeaea;
   max-width: 100%;
   width: 100%;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
   box-shadow: -1px 3px 5px #141420;
-  position: absolute;
+  position: fixed;
+  z-index: 99;
 }
 
 .header-main-div div {

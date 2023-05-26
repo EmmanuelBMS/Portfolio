@@ -1,35 +1,42 @@
 import React from 'react';
 import Header from '../Components/Header';
 import '../Styles/Home.css';
+import TEXTURE from '../Assets/TEXTURE.jpg';
+import LinksMenu from '../Components/LinksMenu';
 
 function Home() {
   return (
     <div>
       <Header />
-      <main>
+      <section>
         <div className="main-content-div">
+          <img
+            className="main-content-background"
+            src={TEXTURE}
+            alt="Textura do fundo do site"
+          />
           <div className="main-content-div-tittles">
-            <h3>Olá, sou o</h3>
-            <h1>Emmanuel Brunno</h1>
+            <h1>EMMANUEL BRUNNO</h1>
             <h3>
-              Desenvolvedor Web
-              <span className="span-h3-text-color-highlight"> FullStack</span>
+              DESENVOLVEDOR WEB FULL STACK
             </h3>
             <p>
-              Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum
-              Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum
-              Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum
-              Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum
-              Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum  Lore ipsum
+              Crio sites e aplicativos modernos.
             </p>
           </div>
-          <div>
+          <div className="main-button-div">
             <button type="button">
-              Currículo
+              DOWNLOAD CV
             </button>
           </div>
         </div>
-      </main>
+        <div className="main-scrollicon-div">
+          <div className="scrollicon-border">
+            <div className="scrollicon-animation" />
+          </div>
+        </div>
+      </section>
+      <LinksMenu />
     </div>
   );
 }
