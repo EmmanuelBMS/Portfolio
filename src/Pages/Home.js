@@ -3,6 +3,7 @@ import Header from '../Components/Header';
 import LinksMenu from '../Components/LinksMenu';
 import Intro from '../Sections/Intro';
 import About from '../Sections/About';
+import Projects from '../Sections/Projects';
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <LinksMenu />
       <Intro />
       <About />
+      <Projects />
     </div>
   );
 }

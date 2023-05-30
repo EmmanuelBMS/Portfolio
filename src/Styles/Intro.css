@@ -69,7 +69,6 @@
 }
 
 .main-button-div button:hover {
-  text-align: center;
   background-color: #E94560;
   color: #eaeaea;
   transform: translateY(-3px);

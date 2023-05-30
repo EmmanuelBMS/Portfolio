@@ -1,0 +1,36 @@
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #1A1A2E;
+  color: #eaeaea;
+  letter-spacing: 3px;
+  height: auto;
+}
+
+.projects-section-title-div {
+  padding-top: 10%;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+.projects-section-title-div h2 {
+  text-align: center;
+  font-size: 34px;
+  letter-spacing: 3px;
+}
+
+.projects-title-underline {
+  width: 40px;
+  height: 6px;
+  border-radius: 4px;
+  margin: 2% auto;
+  background-color: #E94560;
+}
+
+.projects-section-title-div h4 {
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-align: center;
+}
+
