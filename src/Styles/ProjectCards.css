@@ -1,5 +1,5 @@
 .projectcards-main-div {
-  width: 85%;
+  width: 75%;
   margin: 5% auto;
   display: flex;
   flex-wrap: wrap;
@@ -39,7 +39,7 @@
   font-family: inherit;
   border: none;
   background-color: #962c3e;
-  padding: 12px 24px;
+  padding: 16px 40px;
   border-radius: 6px;
   box-shadow: 1px 6px 12px #141420;
   cursor: pointer;

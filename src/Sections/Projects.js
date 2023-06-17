@@ -4,7 +4,7 @@ import '../Styles/Projects.css';
 
 function Projects() {
   return (
-    <section className="projects-section">
+    <section id="projects" className="projects-section">
       <div className="projects-section-title-div">
         <h2>PROJECTS</h2>
         <div className="projects-title-underline" />

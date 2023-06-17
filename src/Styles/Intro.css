@@ -29,8 +29,8 @@
 }
 
 .main-content-div-tittles h1 {
-  font-size: 48px;
-  letter-spacing: 4px;
+  font-size: 56px;
+  letter-spacing: 6px;
 }
 
 .main-content-div-tittles h3 {
@@ -43,7 +43,6 @@
   font-size: 18px;
   line-height: 32px;
   margin: 2% auto;
-  width: 600px;
 }
 
 .main-button-div {

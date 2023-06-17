@@ -14,15 +14,31 @@ function LinksMenu() {
         <ul>
           <li>
             <a
-              href="https://www.google.com"
+              href="https://github.com/EmmanuelBMS"
               target="_blank"
               rel="noreferrer"
             >
               <FaGithub />
             </a>
           </li>
-          <li><FaLinkedin /></li>
-          <li><FaYoutube /></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/emmanuelbms/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCFx-0Io3-TOHVuR8ZThiU0w"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaYoutube />
+            </a>
+          </li>
           <li><FaInstagram /></li>
         </ul>
       </div>

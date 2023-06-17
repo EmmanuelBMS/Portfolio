@@ -1,10 +1,11 @@
 import React from 'react';
 import TEXTURE from '../Assets/TEXTURE.jpg';
 import '../Styles/Intro.css';
+import curriculo from '../Assets/Curriculo.pdf';
 
 function Intro() {
   return (
-    <section className="home-section">
+    <section id="intro" className="home-section">
       <div className="main-content-div">
         <img
           className="main-content-background"
@@ -22,7 +23,7 @@ function Intro() {
         </div>
         <div className="main-button-div">
           <button type="button">
-            DOWNLOAD CV
+            <a href={curriculo} download="Curriculo">DOWNLOAD CV</a>
           </button>
         </div>
       </div>
