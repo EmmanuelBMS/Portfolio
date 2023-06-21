@@ -9,8 +9,8 @@ function Projects() {
         <h2>PROJECTS</h2>
         <div className="projects-title-underline" />
         <h4>
-          Aqui você vai encontrar um pouco do meu trabalho,
-          projetos pessoais e profissionais.
+          Este espaço uso para compartilhar
+          projetos que estou trabalhando, e alguns que já finalizei.
         </h4>
       </div>
       <ProjectCards />

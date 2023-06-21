@@ -1,5 +1,7 @@
 import React from 'react';
 import '../Styles/About.css';
+import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
+import Example from '../Assets/Example.jpg';
 
 function About() {
   return (
@@ -16,23 +18,38 @@ function About() {
         <div className="about-section-about-content">
           <h3>Minha história</h3>
           <p>
-            Lore ipsum Lore ipsum Lore ipsum Lore ipsum
-            Lore ipsum Lore ipsum Lore ipsum Lore ipsum
-            Lore ipsum Lore ipsum Lore ipsum Lore ipsum
-            Lore ipsum Lore ipsum Lore ipsum Lore ipsum
-            Lore ipsum Lore ipsum Lore ipsum Lore ipsum
-            Lore ipsum Lore ipsum Lore ipsum Lore ipsum
-            Lore ipsum Lore ipsum Lore ipsum Lore ipsum
-            Lore ipsum Lore ipsum Lore ipsum Lore ipsum
-            Lore ipsum Lore ipsum Lore ipsum Lore ipsum
+            Meu nome é Emmanuel Brunno, tenho 27 anos, casado com uma linda esposa e juntos
+            temos uma cadela muito pipoca chamada Eevee,
+            São Paulo-SP, mas sou natural de Aracaju-SE e morei 4 anos na cidade de Juazeiro-BA.
+            <br />
+            Conheci tecnologia através de jogos, que por sinal é meu hobby desde os anos 2000.
+            Iniciei os estudos na área de tecnologia pela paixão por jogos, comecei com C# + Unity
+            em meados de 2019
+            e tornar meu hobby desenvolver jogos e não só jogá-los. Foi então que
+            conheci a Escola de programação&nbsp;
+            <a href="https://www.betrybe.com/" target="_blank" rel="noreferrer">Trybe</a>
+            &nbsp;
+            onde durante 1 ano e 3 meses me especializei em Reactjs, Nodejs e Python e pude assim
+            me profissionalizar na área de desenvolvimento de software.
           </p>
         </div>
-        <div>
+        <div className="about-section-images-div">
+          <div className="about-section-images-div-button left">
+            <MdOutlineArrowBackIos />
+          </div>
+          <div>
+            <img src={Example} alt="imagens" />
+          </div>
+          <div className="about-section-images-div-button right">
+            <MdOutlineArrowForwardIos />
+          </div>
+        </div>
+        <div className="about-section-skills-div">
           <h3>Habilidades</h3>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
-            <li>JAVASCRIPT</li>
+            <li>Javascript</li>
             <li>MySQL</li>
             <li>Git & Github</li>
             <li>Docker</li>
@@ -42,6 +59,8 @@ function About() {
             <li>POO</li>
             <li>MongoDB</li>
             <li>Agile</li>
+            <li>Python</li>
+            <li>Django</li>
           </ul>
         </div>
       </div>

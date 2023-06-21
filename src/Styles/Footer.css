@@ -1,5 +1,5 @@
 footer {
-  background-color: #eaeaea;
+  background-color: #2b2b2b;
 }
 
 .footer-main-div {
@@ -8,8 +8,8 @@ footer {
   padding: 4% 0;
   display: flex;
   justify-content: space-between;
-  color: #1A1A2E;
-  border-bottom: 1px solid #1A1A2E;
+  color: #f0f6f6;
+  border-bottom: 1px solid #f0f6f6;
 }
 
 .footer-tittle-div {
@@ -44,16 +44,16 @@ footer {
   margin-top: 8%;
   width: inherit;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .footer-social-div li {
-  margin-right: 8%;
   transition: ease .2s;
   cursor: pointer;
 }
 
 .footer-social-div li:hover {
-  color: #E94560;
+  color: #42bfdd;
 }
 
 .footer-copyright-div {
@@ -62,6 +62,7 @@ footer {
   padding: 4% 0;
   text-align: center;
   font-size: 11px;
+  color: #f0f6f6;
 }
 
 .footer-copyright-div a {

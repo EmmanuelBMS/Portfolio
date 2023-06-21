@@ -1,5 +1,5 @@
 import React from 'react';
-import TEXTURE from '../Assets/TEXTURE.jpg';
+import Background from '../Assets/Background.jpg';
 import '../Styles/Intro.css';
 import curriculo from '../Assets/Curriculo.pdf';
 
@@ -9,7 +9,7 @@ function Intro() {
       <div className="main-content-div">
         <img
           className="main-content-background"
-          src={TEXTURE}
+          src={Background}
           alt="Textura do fundo do site"
         />
         <div className="main-content-div-tittles">
@@ -18,7 +18,13 @@ function Intro() {
             DESENVOLVEDOR WEB FULL STACK
           </h3>
           <p>
-            Crio sites e aplicativos modernos.
+            Crio sites e aplicativos modernos,
+            utilizando das ferramentas
+            mais populares do mundo Javascript & Python.
+            Adepto aos designs minimalistas,
+            procuro tornar a internet um lugar mais simples e atraente através da ótica do usuário.
+            <br />
+            A final de contas menos é mais.
           </p>
         </div>
         <div className="main-button-div">
@@ -26,10 +32,12 @@ function Intro() {
             <a href={curriculo} download="Curriculo">DOWNLOAD CV</a>
           </button>
         </div>
-      </div>
-      <div className="main-scrollicon-div">
-        <div className="scrollicon-border">
-          <div className="scrollicon-animation" />
+        <div className="main-scrollicon-div">
+          <a href="#about">
+            <div className="scrollicon-border">
+              <div className="scrollicon-animation" />
+            </div>
+          </a>
         </div>
       </div>
     </section>

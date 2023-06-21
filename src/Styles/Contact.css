@@ -1,6 +1,6 @@
 .contact-section {
-  background-color: #1A1A2E;
-  color: #eaeaea;
+  background-color: #f0f6f6;
+  color: #2b2b2b;
   position: relative;
   top: 0;
   left: 0;
@@ -39,7 +39,7 @@
   height: 6px;
   border-radius: 4px;
   margin: 2% auto;
-  background-color: #E94560;
+  background-color: #ff66b3;
 }
 
 .contact-section-tittle-div h4 {
@@ -51,33 +51,33 @@
 
 .contact-form-main-div button {
   text-align: center;
-  color: #1b1b1b;
+  color: #f0f6f6;
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 18px;
   font-family: inherit;
   border: none;
-  background-color: #962c3e;
+  background-color: #0b4b83;
   padding: 14px 45px;
   border-radius: 6px;
-  box-shadow: 1px 6px 12px #141420;
+  box-shadow: 1px 1px 3px #2b2b2b;
   cursor: pointer;
   transition: all .2s linear;
 }
 
 .contact-form-main-div button:hover {
-  background-color: #E94560;
-  color: #eaeaea;
+  background-color: #42bfdd;
+  color: #f0f6f6;
   transform: translateY(-3px);
 }
 
 .contact-form-main-div {
   width: 60%;
   margin: 0 auto;
-  background-color: #1f1f36;
+  background-color: #f0f6f6;
   padding: 4% 3%;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px #141420;
+  box-shadow: 0px 0px 3px #2b2b2b;
   position: relative;
   z-index: 98;
 }
@@ -94,13 +94,13 @@
 
 .contact-form-main-div input[type=text] {
   width: inherit;
-  padding: 3% 2%;
+  padding: 14px 8px;
   max-width: 100%;
   margin: 2% 0;
   border-radius: 6px;
   border: none;
-  background-color: #141420;
-  color: #eaeaea;
+  background-color: #d0d7d7;
+  color: #2b2b2b;
   font-size: 16px;
 }
 
@@ -111,21 +111,21 @@
 
 .contact-form-main-div textarea {
   width: inherit;
-  padding: 3% 2%;
+  padding: 14px 8px;
   max-width: 100%;
   margin: 2% 0;
   border-radius: 6px;
   border: none;
   font-family: 'Roboto', sans-serif;
-  background-color: #141420;
+  background-color: #d0d7d7;
   resize: none;
-  color: #eaeaea;
+  color: #2b2b2b;
   font-size: 16px;
 }
 
 .contact-button-div {
   margin-bottom: 0%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-top: 5%;
 }

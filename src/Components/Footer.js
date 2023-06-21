@@ -16,7 +16,8 @@ function Footer() {
             EMMANUEL BRUNNO
           </h2>
           <span>
-            Lore ipsum Lore ipsum Lore ipsum Lore ipsum Lore ipsum Lore ipsum
+            Desenvolvedor de sites e aplicativos modernos, utilizando das ferramentas
+            mais populares do mundo Javascript & Python.
           </span>
         </div>
         <div className="footer-social-div">

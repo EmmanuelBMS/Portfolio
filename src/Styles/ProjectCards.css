@@ -1,6 +1,6 @@
 .projectcards-main-div {
   width: 75%;
-  margin: 5% auto;
+  margin: 2% auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -17,7 +17,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  padding: 3% 10%;
+  padding: 1% 10%;
 }
 
 .projectcard-main-div h2 {
@@ -31,32 +31,33 @@
 }
 
 .projectcard-main-div a {
-  text-align: center;
-  color: #1b1b1b;
+  color: #f0f6f6;
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 18px;
   font-family: inherit;
   border: none;
-  background-color: #962c3e;
+  background-color: #0b4b83;
   padding: 16px 40px;
   border-radius: 6px;
-  box-shadow: 1px 6px 12px #141420;
+  box-shadow: 1px 1px 3px #2b2b2b;
   cursor: pointer;
   max-height: 20px;
   transition: all .2s linear;
+  display: flex;
+  align-items: center;
 }
 
 .projectcard-main-div a:hover {
-  background-color: #E94560;
-  color: #eaeaea;
+  background-color: #42bfdd;
+  color: #f0f6f6;
   transform: translateY(-3px);
 }
 
 .project-img-div {
-  background-color: #1f1f36;
+  background-color: #2b2b2b;
   border-radius: 6px;
-  padding: 2%;
+  padding: 10px;
   box-shadow: inset 0px 0px 12px black;
   max-height: 266px;
 }
