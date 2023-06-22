@@ -45,9 +45,9 @@
   height: 100%;
 }
 
-/* ------------------------ 750px Resposive ---------------------- */ 
+/* ------------------------ 800px Resposive ---------------------- */ 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .linksmenu-main-div {
     display: none;
   }

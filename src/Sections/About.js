@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/About.css';
-import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
-import Example from '../Assets/Example.jpg';
+import Carousel from '../Components/Carousel';
+import photosData from '../Data/PhotosData';
 
 function About() {
   return (
@@ -34,15 +34,7 @@ function About() {
           </p>
         </div>
         <div className="about-section-images-div">
-          <div className="about-section-images-div-button left">
-            <MdOutlineArrowBackIos />
-          </div>
-          <div>
-            <img src={Example} alt="imagens" />
-          </div>
-          <div className="about-section-images-div-button right">
-            <MdOutlineArrowForwardIos />
-          </div>
+          <Carousel images={photosData} />
         </div>
         <div className="about-section-skills-div">
           <h3>Habilidades</h3>

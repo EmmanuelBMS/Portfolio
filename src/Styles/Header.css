@@ -60,3 +60,26 @@
 .header-links-div li:hover {
   color: #42bfdd;
 }
+
+/* ------------------------------- 800 px Responsive ---------------------------- */
+
+@media screen and (max-width: 800px) {
+  .header-links-div {
+    display: none;
+  }
+
+  .header-tittle-div {
+    width: 90%;
+    margin: 1% auto;
+    justify-content: space-evenly;
+  }
+
+  .header-tittle-div span {
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .header-tittle-photo {
+    margin: 0;
+  }
+}

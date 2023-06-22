@@ -1,34 +1,24 @@
-// import React, { useState, useEffect } from 'react';
 import React from 'react';
 import '../Styles/Header.css';
 import Foto from '../Assets/FOTO.png';
 
 function Header() {
-  // const [screenWidth, setscreenWidth] = useState(0);
-
-  // function handleResize() {
-  //   useEffect(() => {
-  //     function updatescreenWidth() {
-  //       setscreenWidth(window.innerWidth);
-  //     }
-  //     window.addEventListener('resize', updatescreenWidth);
-  //     updatescreenWidth();
-  //     return () => window.removeEventListener('resize', updatescreenWidth);
-  //   }, []);
-  // }
-
   return (
     <header>
       <div className="header-main-div">
         <div className="header-tittle-div">
-          <img
-            src={Foto}
-            alt="minha foto"
-            className="header-tittle-photo"
-          />
-          <span>
-            EMMANUELBMS
-          </span>
+          <a href="#intro">
+            <img
+              src={Foto}
+              alt="minha foto"
+              className="header-tittle-photo"
+            />
+          </a>
+          <a href="#intro">
+            <span>
+              EMMANUELBMS
+            </span>
+          </a>
         </div>
         <div className="header-links-div">
           <ul>
