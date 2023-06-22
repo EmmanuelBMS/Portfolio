@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import '../Styles/Header.css';
 import Foto from '../Assets/FOTO.png';
 
 function Header() {
+  const header = useRef();
+
+  useEffect(() => {
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop > lastScroll) {
+        header.current.style.top = '-100px';
+      } else {
+        header.current.style.top = '0';
+      }
+      lastScroll = scrollTop;
+    });
+  });
+
   return (
     <header>
-      <div className="header-main-div">
+      <div className="header-main-div" ref={header}>
         <div className="header-tittle-div">
           <a href="#intro">
             <img

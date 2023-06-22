@@ -4,17 +4,17 @@ const photosData = [
   {
     path: `${Example}`,
     tittle: 'lalala',
+    id: 0,
+  },
+  {
+    path: `${Example}`,
+    tittle: 'lalala',
     id: 1,
   },
   {
     path: `${Example}`,
     tittle: 'lalala',
     id: 2,
-  },
-  {
-    path: `${Example}`,
-    tittle: 'lalala',
-    id: 3,
   },
 ];
 

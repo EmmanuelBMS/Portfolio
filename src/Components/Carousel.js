@@ -21,8 +21,8 @@ function Carousel({ images }) {
         {images.map((image) => {
           const { path, title, id } = image;
           return (
-            <div className="carousel-image-div">
-              <img src={path} alt={title} key={id} />
+            <div className="carousel-image-div" key={id}>
+              <img src={path} alt={title} />
             </div>
           );
         })}

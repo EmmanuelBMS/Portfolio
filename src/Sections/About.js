@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import '../Styles/About.css';
 import Carousel from '../Components/Carousel';
 import photosData from '../Data/PhotosData';
 
 function About() {
+  const [expanded, setExpanded] = useState(true);
+  const myText = useRef();
+
+  const handleText = () => {
+    if (myText.current.style.height !== 'fit-content') {
+      myText.current.style.height = 'fit-content';
+      setExpanded(false);
+    } else {
+      myText.current.style.height = '300px';
+      setExpanded(true);
+    }
+  };
+
   return (
     <section id="about" className="about-section">
       <div className="about-section-title-div">
@@ -17,7 +30,7 @@ function About() {
       <div className="about-section-content-div">
         <div className="about-section-about-content">
           <h3>Minha história</h3>
-          <p>
+          <p ref={myText}>
             Meu nome é Emmanuel Brunno, tenho 27 anos, casado com uma linda esposa e juntos
             temos uma cadela muito pipoca chamada Eevee,
             São Paulo-SP, mas sou natural de Aracaju-SE e morei 4 anos na cidade de Juazeiro-BA.
@@ -32,6 +45,7 @@ function About() {
             onde durante 1 ano e 3 meses me especializei em Reactjs, Nodejs e Python e pude assim
             me profissionalizar na área de desenvolvimento de software.
           </p>
+          <button type="button" onClick={handleText}>{ expanded ? 'ver mais' : 'ver menos' }</button>
         </div>
         <div className="about-section-images-div">
           <Carousel images={photosData} />

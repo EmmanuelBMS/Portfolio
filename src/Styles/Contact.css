@@ -129,3 +129,11 @@
   justify-content: flex-end;
   margin-top: 5%;
 }
+
+/* ----------------------- 800px responsive -----------------*/
+
+@media screen and (max-width: 800px) {
+  .contact-form-main-div {
+    width: 80%;
+  }
+}

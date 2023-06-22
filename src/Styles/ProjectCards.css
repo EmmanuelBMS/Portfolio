@@ -26,6 +26,7 @@
 }
 
 .projectcard-main-div p {
+  cursor: grabbing;
   text-align: left;
   font-size: 16px;
   line-height: 24px;
@@ -35,6 +36,10 @@
   max-height: 210px;
   padding: 0 5%;
   overflow: auto;
+}
+
+.projectcard-main-div p::selection {
+  background-color: #f0f6f6;
 }
 
 .projectcard-main-div a {

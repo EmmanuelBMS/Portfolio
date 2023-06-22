@@ -1,4 +1,4 @@
-footer {
+.footers-div {
   background-color: #2b2b2b;
 }
 
@@ -70,4 +70,45 @@ footer {
   margin-left: 1%;
   text-decoration: underline;
   font-weight: 700;
+}
+
+/* -------------------------------- 800px Responsive -----------------------------*/
+
+@media screen and (max-width: 800px) {
+  .footers-div {
+    padding-bottom: 80px;
+  }
+  .footer-main-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-tittle-div {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-tittle-div h2 {
+    text-align: center;
+  }
+
+  .footer-social-div h2 {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .footer-social-div {
+    width: 80%;
+    max-width: 80%;
+  }
+
+  .footer-social-div ul {
+    width: 100%;
+    font-size: 36px;
+    flex-wrap: nowrap;
+    margin: 0;
+    justify-content: space-between;
+  }
 }

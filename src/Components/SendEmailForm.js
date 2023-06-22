@@ -21,7 +21,7 @@ function SendEmailForm() {
     e.preventDefault();
     try {
       formValidation(form.current);
-      emailjs.sendForm('service_6o2g60e', 'template_7ld4xcs', form.current, 'U7OaEFdK6RdfyETmn');
+      emailjs.sendForm('service_6o2g60e', 'template_ul1ggvc', form.current, 'U7OaEFdK6RdfyETmn');
     } catch (error) {
       MySwal.fire({
         title: `${error.message}`,
@@ -41,13 +41,13 @@ function SendEmailForm() {
       <div>
         <label htmlFor="name">
           Nome
-          <input type="text" id="name" placeholder="Escreva seu nome" required="required" />
+          <input type="text" id="name" name="name" placeholder="Escreva seu nome" required="required" />
         </label>
       </div>
       <div>
         <label htmlFor="email">
           Email
-          <input type="text" id="email" placeholder="Escreva seu email" required="required" />
+          <input type="text" id="email" name="email" placeholder="Escreva seu email" required="required" />
         </label>
       </div>
       <div>
@@ -56,6 +56,7 @@ function SendEmailForm() {
           <textarea
             type="textarea"
             id="message"
+            name="message"
             placeholder="Escreva sua mensagem (máximo 500 caracteres)"
             maxLength={500}
             required="required"

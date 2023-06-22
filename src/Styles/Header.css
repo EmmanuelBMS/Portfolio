@@ -1,7 +1,7 @@
 .header-main-div {
   padding: 1% 0%;
   display: flex;
-  background-color: #f0f6f6; /* #1A1A2E bg-color */
+  background-color: #f0f6f6;
   align-items: center;
   justify-content: space-between;
   color: #2b2b2b;
@@ -13,6 +13,7 @@
   box-shadow: 0px 0px 2px black;
   position: fixed;
   z-index: 99;
+  transition: .3s;
 }
 
 .header-main-div div {
