@@ -93,6 +93,16 @@
   width: 80%;
 }
 
+.about-image-div {
+  width: 100%;
+  display: flex;
+}
+
+.about-image-div img {
+  width: 500px;
+  height: 600px;
+}
+
 .about-section-skills-div {
   width: 50%;
   margin: 5% auto;
@@ -139,7 +149,18 @@
     width: 90%;
     margin: 0 auto;
   }
+
+  .about-image-div img {
+    border-radius: 10px;
+    width: 500px;
+  }
+
+  .about-section-images-div {
+    margin: 5% auto 0 auto;
+    width: 100%;
+  }
 }
+
 
 /* ------------------------- Responsive 800 ----------------------------- */
 
@@ -152,5 +173,9 @@
   }
   .about-section-about-content button {
     display: block;
+  }
+
+  .about-section-images-div {
+    width: 100%;
   }
 }

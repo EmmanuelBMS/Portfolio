@@ -42,6 +42,16 @@
   background-color: #f0f6f6;
 }
 
+.project-image-div {
+  width: 100%;
+  display: flex;
+}
+
+.project-image-div img {
+  width: 500px;
+  height: 400px;
+}
+
 .projectcard-main-div a {
   color: #f0f6f6;
   letter-spacing: 1px;

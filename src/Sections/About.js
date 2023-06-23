@@ -32,7 +32,7 @@ function About() {
           <h3>Minha história</h3>
           <p ref={myText}>
             Meu nome é Emmanuel Brunno, tenho 27 anos, casado com uma linda esposa e juntos
-            temos uma cadela muito pipoca chamada Eevee,
+            temos uma cadela muito pipoca chamada Eevee, moro em
             São Paulo-SP, mas sou natural de Aracaju-SE e morei 4 anos na cidade de Juazeiro-BA.
             <br />
             Conheci tecnologia através de jogos, que por sinal é meu hobby desde os anos 2000.

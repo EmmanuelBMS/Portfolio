@@ -19,9 +19,11 @@ function Carousel({ images }) {
     <div className="carousel-main-div">
       <div className="carousel-images-main-div" ref={carousel}>
         {images.map((image) => {
-          const { path, title, id } = image;
+          const {
+            path, title, id, from,
+          } = image;
           return (
-            <div className="carousel-image-div" key={id}>
+            <div className={`${from}-image-div`} key={id}>
               <img src={path} alt={title} />
             </div>
           );

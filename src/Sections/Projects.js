@@ -6,7 +6,7 @@ function Projects() {
   return (
     <section id="projects" className="projects-section">
       <div className="projects-section-title-div">
-        <h2>PROJECTS</h2>
+        <h2>PROJETOS</h2>
         <div className="projects-title-underline" />
         <h4>
           Este espaço uso para compartilhar
