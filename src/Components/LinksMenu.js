@@ -3,7 +3,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaYoutube,
-  FaInstagram,
 } from 'react-icons/fa';
 import '../Styles/LinksMenu.css';
 
@@ -39,7 +38,6 @@ function LinksMenu() {
               <FaYoutube />
             </a>
           </li>
-          <li><FaInstagram /></li>
         </ul>
       </div>
     </nav>

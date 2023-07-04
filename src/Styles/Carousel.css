@@ -1,82 +1,10 @@
 .carousel-main-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.carousel-images-main-div {
-  display: flex;
-  overflow-x: hidden;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 600px;
-  box-shadow: 0px 0px 10px #2b2b2b;
+  cursor: grab;
+  overflow: hidden;
   border-radius: 10px;
+  background-color: #2b2b2b;
 }
 
-.carousel-image-div {
-  width: 100%;
+.carousel-inner-div {
   display: flex;
-}
-
-.carousel-button-div button {
-  background: none;
-  border: none;
-  padding: 20px;
-  font-size: 40px;
-  cursor: pointer;
-  transition: transform .3s;
-  opacity: .7;
-}
-
-.carousel-button-div button:hover {
-  transform: scale(1.2);
-  opacity: 1;
-}
-
-.carousel-buttons-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-/* ----------------------- 1250 px Responsive ---------------------- */
-
-@media screen and (max-width: 960px) {
-  .carousel-images-main-div {
-    width: 100%;
-    max-width: 500px;
-  }
-}
-
-/* ----------------------- 730 px Responsive ---------------------- */
-
-@media screen and (max-width: 730px) {
-  .carousel-image-div img {
-    width: 380px;
-    height: 480px;
-  }
-
-  .carousel-images-main-div {
-    width: 100%;
-    max-width: 380px;
-  }
-}
-
-/* ----------------------- 620 px Responsive ---------------------- */
-
-@media screen and (max-width: 620px) {
-  .carousel-image-div img {
-    width: 280px;
-    height: 380px;
-  }
-
-  .carousel-images-main-div {
-    width: 100%;
-    max-width: 280px;
-  }
-  
-  .carousel-button-div button {
-    font-size: 30px;
-  }
 }

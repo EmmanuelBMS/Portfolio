@@ -2,7 +2,6 @@ import Zero from '../Assets/Zero.jpeg';
 import Um from '../Assets/Um.jpeg';
 import Dois from '../Assets/Dois.jpeg';
 import Quatro from '../Assets/Quatro.jpeg';
-import Cinco from '../Assets/Cinco.jpeg';
 import Seis from '../Assets/Seis.jpeg';
 import Oito from '../Assets/Oito.jpeg';
 import Nove from '../Assets/Nove.jpeg';
@@ -30,12 +29,6 @@ const photosData = [
     path: `${Quatro}`,
     tittle: 'Foto minha e da esposa no natal 2022',
     id: 4,
-    from: 'about',
-  },
-  {
-    path: `${Cinco}`,
-    tittle: 'Foto minha e da esposa viagem em Garanhuns-PE',
-    id: 5,
     from: 'about',
   },
   {

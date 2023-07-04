@@ -2,21 +2,22 @@
   width: 80%;
   margin: 2% auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .projectcard-main-div {
   display: flex;
   width: 100%;
   margin: 5% auto;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .project-infos-main-div {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 30%;
-  margin: 0 auto;
+  margin-left: 5%;
 }
 
 .projectcard-main-div h2 {
@@ -26,15 +27,13 @@
 }
 
 .projectcard-main-div p {
-  cursor: grabbing;
   text-align: left;
   font-size: 16px;
   line-height: 24px;
-  margin: 10% 0;
+  margin: 10% auto;
   height: fit-content;
   width: 100%;
   max-height: 210px;
-  padding: 0 5%;
   overflow: auto;
 }
 
@@ -42,17 +41,23 @@
   background-color: #f0f6f6;
 }
 
-.project-image-div {
+.projectcard-image-div {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.projectcard-image-div img {
   width: 100%;
-  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px #2b2b2b;
+  transition: .3s;
 }
 
-.project-image-div img {
-  width: 500px;
-  height: 400px;
+.projectcard-image-div img:hover {
+  transform: scale(1.1);
 }
 
-.projectcard-main-div a {
+.project-infos-main-div a {
   color: #f0f6f6;
   letter-spacing: 1px;
   font-weight: bold;
@@ -109,5 +114,17 @@
 
   .projectcard-main-div a {
     margin: 5% auto;
+  }
+
+  .projectcard-image-div {
+    padding-bottom: 5%;
+  }
+}
+
+/* ------------------------ 500 responsive -------------------- */
+
+@media screen and (max-width: 500px) {
+  .projectcard-image-div {
+    display: none;
   }
 }

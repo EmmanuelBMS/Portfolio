@@ -22,7 +22,7 @@ function Header() {
     <header>
       <div className="header-main-div" ref={header}>
         <div className="header-tittle-div">
-          <a href="#intro">
+          <a href="https://github.com/EmmanuelBMS" target="_blank" rel="noreferrer">
             <img
               src={Foto}
               alt="minha foto"

@@ -1,64 +1,43 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos } from 'react-icons/md';
+import { motion } from 'framer-motion';
 import '../Styles/Carousel.css';
 
 function Carousel({ images }) {
+  const [width, setWidth] = useState(0);
   const carousel = useRef();
 
-  const handleLeftClick = (e) => {
-    e.preventDefault();
-    carousel.current.scrollLeft -= carousel.current.offsetWidth;
-  };
-
-  const handleRightClick = (e) => {
-    e.preventDefault();
-    carousel.current.scrollLeft += carousel.current.offsetWidth;
-  };
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
   return (
-    <div className="carousel-main-div">
-      <div className="carousel-images-main-div" ref={carousel}>
+    <motion.div className="carousel-main-div" ref={carousel} whileTap={{ cursor: 'grabbing' }}>
+      <motion.div
+        className="carousel-inner-div"
+        drag="x"
+        dragConstraints={{ right: 0, left: -width }}
+      >
         {images.map((image) => {
           const {
-            path, title, id, from,
+            path, id, desc, from,
           } = image;
           return (
-            <div className={`${from}-image-div`} key={id}>
-              <img src={path} alt={title} />
-            </div>
+            <motion.div key={id} className={`${from}-img-div`}>
+              <img src={path} alt={desc} draggable="false" />
+            </motion.div>
           );
         })}
-      </div>
-      <div className="carousel-buttons-div">
-        <div className="carousel-button-div left">
-          <button
-            type="button"
-            onClick={handleLeftClick}
-          >
-            <MdOutlineArrowBackIos />
-          </button>
-        </div>
-        <div className="carousel-button-div right">
-          <button
-            type="button"
-            onClick={handleRightClick}
-          >
-            <MdOutlineArrowForwardIos />
-          </button>
-        </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
 Carousel.propTypes = {
-  images: PropTypes.arrayOf(
-    PropTypes.shape({
-      path: PropTypes.string,
-      title: PropTypes.string,
-      id: PropTypes.number,
-    }),
-  ),
-}.isRequired;
+  images: PropTypes.arrayOf({
+    id: PropTypes.number,
+    path: PropTypes.string,
+    desc: PropTypes.string,
+  }).isRequired,
+};
 
 export default Carousel;
