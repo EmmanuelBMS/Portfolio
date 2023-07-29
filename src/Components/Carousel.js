@@ -19,11 +19,11 @@ function Carousel({ images }) {
       >
         {images.map((image) => {
           const {
-            path, id, desc, from,
+            path, id, tittle, from,
           } = image;
           return (
             <motion.div key={id} className={`${from}-img-div`}>
-              <img src={path} alt={desc} draggable="false" />
+              <img src={path} alt={tittle} draggable="false" />
             </motion.div>
           );
         })}
@@ -33,11 +33,12 @@ function Carousel({ images }) {
 }
 
 Carousel.propTypes = {
-  images: PropTypes.arrayOf({
-    id: PropTypes.number,
+  images: PropTypes.arrayOf(PropTypes.shape({
     path: PropTypes.string,
-    desc: PropTypes.string,
-  }).isRequired,
+    id: PropTypes.number,
+    tittle: PropTypes.string,
+    from: PropTypes.string,
+  })).isRequired,
 };
 
 export default Carousel;

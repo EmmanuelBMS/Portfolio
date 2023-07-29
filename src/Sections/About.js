@@ -17,6 +17,12 @@ function About() {
     }
   };
 
+  const currentAge = () => {
+    const currentYear = new Date().getFullYear();
+    const birthYear = 1995;
+    return currentYear - birthYear;
+  };
+
   return (
     <section id="about" className="about-section">
       <div className="about-section-title-div">
@@ -31,9 +37,9 @@ function About() {
         <div className="about-section-about-content">
           <h3>Minha história</h3>
           <p ref={myText}>
-            Meu nome é Emmanuel Brunno, tenho 27 anos, casado com uma linda esposa e juntos
+            {`Meu nome é Emmanuel Brunno, tenho ${currentAge()} anos, casado com uma linda esposa e juntos
             temos uma cadela muito pipoca chamada Eevee, moro em
-            São Paulo-SP, mas sou natural de Aracaju-SE e morei 4 anos na cidade de Juazeiro-BA.
+            São Paulo-SP, mas sou natural de Aracaju-SE e morei 4 anos na cidade de Juazeiro-BA.`}
             <br />
             Conheci tecnologia através de jogos, que por sinal é meu hobby desde os anos 2000.
             Iniciei os estudos na área de tecnologia pela paixão por jogos, comecei com C# + Unity

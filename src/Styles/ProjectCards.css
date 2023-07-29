@@ -47,7 +47,7 @@
 }
 
 .projectcard-image-div img {
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
   box-shadow: 0px 0px 8px #2b2b2b;
   transition: .3s;

@@ -124,10 +124,18 @@
 }
 
 .contact-button-div {
-  margin-bottom: 0%;
   display: flex;
   justify-content: flex-end;
-  margin-top: 5%;
+  margin-top: 2%;
+  position: relative;
+  right: 20px;
+}
+
+.characters-counter-div {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 20px;
 }
 
 /* ----------------------- 800px responsive -----------------*/
@@ -135,5 +143,13 @@
 @media screen and (max-width: 800px) {
   .contact-form-main-div {
     width: 80%;
+  }
+
+  .characters-counter-div {
+    right: 10px;
+  }
+
+  .contact-button-div {
+    right: 10px;
   }
 }

@@ -64,7 +64,7 @@ function Intro() {
           className="main-button-div"
         >
           <button type="button">
-            <a href={curriculo} download="Curriculo">DOWNLOAD CV</a>
+            <a href={curriculo} download="Curriculo">CURRÍCULO</a>
           </button>
         </div>
         <div className="main-scrollicon-div">

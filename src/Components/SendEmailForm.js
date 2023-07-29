@@ -1,12 +1,25 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 
 function SendEmailForm() {
   const form = useRef();
+  const [count, setCount] = useState(0);
 
   const MySwal = withReactContent(Swal);
+
+  const currentCharacters = () => {
+    const max = 500;
+    return <span>{`${count}/${max}`}</span>;
+  };
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    const { value } = e.target;
+    const counted = value.length;
+    setCount(counted);
+  };
 
   const formValidation = ({ email }) => {
     // https://www.w3resource.com/javascript/form/email-validation.php regex font
@@ -22,6 +35,17 @@ function SendEmailForm() {
     try {
       formValidation(form.current);
       emailjs.sendForm('service_6o2g60e', 'template_ul1ggvc', form.current, 'U7OaEFdK6RdfyETmn');
+      MySwal.fire({
+        title: 'Email enviado com sucesso!',
+        icon: 'success',
+        background: '#f0f6f6',
+        confirmButtonColor: '#0b4b83',
+        showCloseButton: true,
+        returnFocus: false,
+        color: '#2b2b2b',
+      });
+      form.current.reset();
+      setCount(0);
     } catch (error) {
       MySwal.fire({
         title: `${error.message}`,
@@ -33,6 +57,12 @@ function SendEmailForm() {
         returnFocus: false,
         color: '#2b2b2b',
       });
+    }
+  };
+
+  const handleKey = (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      sendEmail(e);
     }
   };
 
@@ -54,10 +84,12 @@ function SendEmailForm() {
         <label htmlFor="message">
           Mensagem
           <textarea
+            onChange={handleChange}
+            onKeyUp={handleKey}
             type="textarea"
             id="message"
             name="message"
-            placeholder="Escreva sua mensagem (máximo 500 caracteres)"
+            placeholder="Escreva sua mensagem (Use Shift + Enter para quebrar linha e Enter para enviar o formulário)"
             maxLength={500}
             required="required"
             rows={10}
@@ -65,6 +97,7 @@ function SendEmailForm() {
           />
         </label>
       </div>
+      <div className="characters-counter-div">{currentCharacters()}</div>
       <div className="contact-button-div">
         <button type="submit">
           Enviar

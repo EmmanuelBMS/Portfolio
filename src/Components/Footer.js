@@ -3,7 +3,6 @@ import {
   FaGithub,
   FaLinkedin,
   FaYoutube,
-  FaInstagram,
 } from 'react-icons/fa';
 import '../Styles/Footer.css';
 
@@ -52,7 +51,6 @@ function Footer() {
                     <FaYoutube />
                   </a>
                 </li>
-                <li><FaInstagram /></li>
               </ul>
             </div>
           </div>
